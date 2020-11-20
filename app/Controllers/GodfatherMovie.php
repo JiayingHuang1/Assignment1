@@ -58,11 +58,9 @@
         // tell it about the substitions 
         $headings = $character->fields;
 
-                $table->addRow( $record['id']);
                 $table->addRow( $record['name']);
                 $table->addRow( $record['height']);
                 $table->addRow( $record['weight']);
-                $table->addRow( $record['Position']);
                 $table->addRow( $record['Age']);
                 $table->addRow( $record['Country']);
                 $table->addRow( "<img src=\"/image/".$record['image']."\"/>");
