@@ -9,7 +9,7 @@ namespace App\Models;
 class character {
 
     //mock data : an array of records
-    protected $data = [
+    /*protected $data = [
         '1' => [
 
             'name' => 'Don Vito Corleone',
@@ -91,5 +91,9 @@ class character {
         }
         return null;
     }
+
+}*/
+    protected $origin = WRITEPATH . 'data/pic/data.json';
+    protected $keyField = 'id'; protected $validationRules = [];
 
 }
