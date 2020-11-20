@@ -19,7 +19,7 @@
               $parser = \Config\Services::parser(); 
                // tell it about the substitions 
               $table = new \CodeIgniter\View\Table();
-        $headings = $player->fields;
+        $headings = $character->fields;
         $displayHeadings = array_slice($headings, 1, 2);
         $table->setHeading(array_map('ucfirst', $displayHeadings));
         foreach ($records as $record) {
@@ -51,12 +51,12 @@
                   // connect to the model 
                  $character = new \App\Models\character();
                   // retrieve all the records 
-                  $record = $player->find($id); 
+                  $record = $character->find($id); 
                    // get a template parser 
                    $parser = \Config\Services::parser(); 
                   $table = new \CodeIgniter\View\Table(); 
         // tell it about the substitions 
-        $headings = $player->fields;
+        $headings = $character->fields;
 
                 $table->addRow( $record['id']);
                 $table->addRow( $record['name']);
