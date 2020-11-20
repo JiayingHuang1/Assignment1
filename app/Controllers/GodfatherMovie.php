@@ -12,9 +12,9 @@
         public function index()    
         {       
             // connect to the model
-             $player = new \App\Models\character(); 
+             $character = new \App\Models\character(); 
              // retrieve all the records 
-             $records = $player->findAll(); 
+             $records = $character->findAll(); 
              // get a template parser
               $parser = \Config\Services::parser(); 
                // tell it about the substitions 
